@@ -4,17 +4,130 @@
   <head>
     <meta charset="utf-8">
     <title>Arthur GANTIER</title>
+    <link rel="stylesheet" href="miseenpage.css">
     <link rel="stylesheet" href="IndexStylesheet.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   </head>
    
   <body>
-    <h1>Arthur GANTIER</h1>
-    <h2>Aussi rapide que la musique.</h2>
-    <img class="icon" src="Images/facebook.png" alt="logo facebook">
-    <img class="icon" src="Images/linkedin.png" alt="logo linkedin">
-    <img class="icon" src="Images/soundcloud.png" alt="logo soundcloud">
-    <img class="icon" src="Images/instagram.png" alt="logo instagram">
-    <img class="icon" src="Images/youtube.png" alt="logo youtube">
-    <div>Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/"             title="Flaticon">www.flaticon.com</a></div>
-  </body>
+    <script src="java_index.js"></script>
+    <!-------------------------------------- Header -------------------------------------->
+    <div id="header">
+      <span style="color: #212121">Arthur <b>GANTIER</b></span>
+      <div class="Soustitre"></div>
+      <span><img id="logo" src="Images/Logo_Zero.png" alt="logo" onclick="openNav()"></span>
+    </div>
+
+    <div id="underheader">
+
+      <!-------------------------------------- Lecteur audio -------------------------------------->
+
+        <audio src="Musique/vapormoet.mp3"></audio>
+        <div class="player"> 
+          <!-- placeholder pour l'icone de l'image--><img class="img" src="Images/photoswag.png" alt="pochette de musique"/>
+          <div class="info">
+            <div class="name">Vapormoët</div>
+            <div class="singer">Zero</div>
+          </div>
+          <div class="btns">
+            <div class="iconfont play-pause icon-play"></div>
+          </div>
+          <div class="progress">
+
+          </div>
+        </div>
+
+
+
+
+
+
+      <!-------------------------------------- Flip Card Image et Bio -------------------------------------->
+      <div class="flip-card">
+        <div class="flip-card-inner">
+          <div class="flip-card-front">
+            <img id="flip-card-image" src="Images/photoswag.png" alt="Avatar">
+          </div>
+          <div class="flip-card-back">
+            <h1>Arthur <b>GANTIER</b></h1>
+            <p>Etudiant en web design et marketing</p>
+            <p>Beatmaker</p>
+            <p>Skater</p>
+          </div>
+        </div>
+      </div>
+
+      <!-------------------------------------- Barres de compétences a finir -------------------------------------->
+      <p>HTML</p>
+      <div class="container">
+        <div class="skills html">90%</div>
+      </div>
+        
+      <p>CSS</p>
+      <div class="container">
+        <div class="skills css">80%</div>
+      </div>
+        
+      <p>JavaScript</p>
+      <div class="container">
+        <div class="skills js">65%</div>
+      </div>
+        
+      <p>PHP</p>
+      <div class="container">
+        <div class="skills php">60%</div>
+      </div>
+
+     </div>
+
+
+     <!-------------------------------------- Overlay cliquable sur le logo -------------------------------------->
+     <div id="myNav" class="overlay">
+
+
+     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  
+
+     <div class="overlay-content">
+      <a href="#">About</a>
+      <a href="#">Services</a>
+      <a href="#">Clients</a>
+      <a href="#">Contact</a>
+     </div>
+  
+     </div>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <!-------------------------------------- Footer -------------------------------------->
+     <footer id="footer">
+
+      <p>Contacts</p>
+
+
+     </footer>
+
+    </body>
 </html>
