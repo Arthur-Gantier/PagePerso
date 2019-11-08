@@ -1,133 +1,57 @@
 <!DOCTYPE html>
 
-<html>
+<html lang="fr">
   <head>
     <meta charset="utf-8">
     <title>Arthur GANTIER</title>
     <link rel="stylesheet" href="miseenpage.css">
     <link rel="stylesheet" href="IndexStylesheet.css">
-
     <link href="https://fonts.googleapis.com/css?family=Rajdhani" rel="stylesheet">
   </head>
    
   <body>
-    <script src="java_index.js"></script>
-    <!-------------------------------------- Header -------------------------------------->
-    <div id="header">
-      <span style="color: #212121">Arthur <b>GANTIER</b></span>
-      <div class="Soustitre"></div>
-      <span><img id="logo" src="Images/Logo_Zero.png" alt="logo" onclick="openNav()"></span>
+    
+    <!-- Header - -->
+    <header>
+      <h1>Arthur GANTIER</h1>
+      <div><img id="logo" src="Images/Logo_Zero.png" alt="logo"></div>
+    </header>
+    <!--  Biographie/Objectif  -->
+    <div id="Textes">
+      <h2>Biographie</h2>
+      <p class="paragraphes">Jeune atiste rouennais, quasiment né avec un ordinateur devant soi.
+        Depuis je passe le plus clair de mon temps sur mon ordinateur.
+        Je code, je fais de la musique, j’expérimente.
+      </p>
+      <h2>Objectif</h2>
+      <p class="paragraphes">Je suis aujourd’hui étudiant à la Normandie Web School.
+         Grâce à cette école je souhaite progresser dans le maniement du code,
+         du design et du marketing digital afin de devenir chef de projet.
+         Je compte m’améliorer grâce à mes stages en entreprises.
+      </p>
+      <h2>Creatif</h2>
+      <p class="paragraphes">Mon esprit s’entraine depuis longtemps à trouver des idées.
+        Je m’ennuie vite et je suis fégnant.
+        Ces caractéristiques me permettent de trouver des solutions divertissantes 
+        et rapide lorsque je suis confronté à problème.
+      </p>
     </div>
-
-    <div id="underheader">
-
-      <!-------------------------------------- Lecteur audio -------------------------------------->
-
-        <audio src="Musique/vapormoet.mp3"></audio>
-        <div class="player"> 
-          <!-- placeholder pour l'icone de l'image--><img class="img" src="Images/photoswag.png" alt="pochette de musique"/>
-          <div class="info">
-            <div class="name">Vapormoët</div>
-            <div class="singer">Zero</div>
-          </div>
-          <div class="btns">
-            <div class="iconfont play-pause icon-play"></div>
-          </div>
-          <div class="progress">
-
-          </div>
-        </div>
-
-
-
-
-
-
-      <!-------------------------------------- Flip Card Image et Bio -------------------------------------->
-      <div class="flip-card">
-        <div class="flip-card-inner">
-          <div class="flip-card-front">
-            <img id="flip-card-image" src="Images/photoswag.png" alt="Avatar">
-          </div>
-          <div class="flip-card-back">
-            <h1>Arthur <b>GANTIER</b></h1>
-            <p>Etudiant en web design et marketing</p>
-            <p>Beatmaker</p>
-            <p>Skater</p>
-          </div>
-        </div>
-      </div>
-
-      <!-------------------------------------- Barres de compétences a finir -------------------------------------->
-      <p>HTML</p>
-      <div class="container">
-        <div class="skills html">90%</div>
-      </div>
-        
-      <p>CSS</p>
-      <div class="container">
-        <div class="skills css">80%</div>
-      </div>
-        
-      <p>JavaScript</p>
-      <div class="container">
-        <div class="skills js">65%</div>
-      </div>
-        
-      <p>PHP</p>
-      <div class="container">
-        <div class="skills php">60%</div>
-      </div>
-
-     </div>
-
-
-     <!-------------------------------------- Overlay cliquable sur le logo -------------------------------------->
-     <div id="myNav" class="overlay">
-
-
-     <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-  
-
-     <div class="overlay-content">
-      <a href="#">About</a>
-      <a href="#">Services</a>
-      <a href="#">Clients</a>
-      <a href="#">Contact</a>
-     </div>
-  
-     </div>
-  
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-     <!-------------------------------------- Footer -------------------------------------->
-     <footer id="footer">
-
+    <!--  Lecteur audio  -->
+    <div id="audio">
+      <audio controls src="Musique/vapormoet.mp3">
+        Your browser does not support the <code>audio</code> element.
+      </audio>
+    </div>
+    <!--  Diplômes  -->
+    <div id="diplomes"></div>
+    <!--  Expériences  -->
+    <div id="exp"></div>
+    <!--  Footer  -->
+    <footer>
       <p>Contacts</p>
-
-
-     </footer>
-
-    </body>
+      <p>Email : arthur.gantier@gmail.com</p>
+    </footer>
+    <!--  Scripts  -->
+    <script src="java_index.js"></script>
+  </body>
 </html>
