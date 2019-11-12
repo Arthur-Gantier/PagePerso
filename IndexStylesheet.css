@@ -1,45 +1,86 @@
 body{
-  background-color: #F7F7F7;
+  background-color: #212121;
   margin: 0;
   font-family: 'Rajdhani';
 }
 
 h1 {
   text-align: center;
+  margin: 10px;
 }
 
+#accroche{
+  text-align: center;
+  margin: 10px;
+}
+
+#logo{
+  width: 10%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+#Textes{
+  padding: 20px;
+}
 
 @media(min-width: 992px) {
   body {
     display: grid;
     grid-template-columns: 10% 40% 40% 10%;
-    grid-template-rows: 100px 500px 100px 300px 100px;
+    grid-template-rows: 200px 500px 100px 300px 100px;
+    grid-auto-rows: auto;
   }
+
+  /* #colonnegauche{
+    background-color: #272727;
+    grid-column: 1/2;
+    grid-row: 2/5;
+  }
+
+  #colonnedroite{
+    background-color: #272727;
+    grid-column: 4/-1;
+    grid-row: 2/5;
+  } */
 
   header{
+    background-color: #212121;
     grid-column: 1/-1;
   }
 
-  .Textes{
-    grid-column: 1/3;
+  #Textes{
+    background-color: #F7F7F7;
+    grid-column: 2/3;
     grid-row: 2/3;
   }
-  .audio{
-    grid-column: 1/-1;
+  #audio{
+    grid-column: 2/4;
     grid-row: 3/4;
   }
 
-  .diplomes{
-    grid-column: 1/3;
+  #diplomes{
+    background-color: grey;
+    grid-column: 2/3;
     grid-row: 4/5;
   }
 
-  .exp{
-    grid-column: 3/-1;
+  #exp{
+    background-color: yellowgreen;
+    grid-column: 3/4;
     grid-row: 4/5;
   }
 
   footer{
+    background-color: #F7F7F7;
     grid-column: 1/-1;
   }
 }
